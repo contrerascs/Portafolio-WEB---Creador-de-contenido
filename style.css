@@ -249,6 +249,37 @@ body::-webkit-scrollbar-track {
     }
 }
 
+/* Estilo para el nuevo botón */
+.home__buttons a.bg-gray-700 {
+    background-color: #ff4900; /* Color gris oscuro */
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home__buttons a.bg-gray-700:hover {
+    background-color: #2d3748; /* Color más oscuro al hover */
+}
+/* Agrega esto a tu CSS */
+.eng-portfolio-btn {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    background-color: #f97316; /* Naranja 500 */
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.eng-portfolio-btn:hover {
+    background-color: #ea580c; /* Naranja 600 */
+}
+
 
 
 /* ------- ABOUT ME -------- */
