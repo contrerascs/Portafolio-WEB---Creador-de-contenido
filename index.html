@@ -33,12 +33,9 @@
                     <li onclick="scrollToSection('about')">Sobre mí</li>
                     <li onclick="scrollToSection('services')">Servicios</li>
                     <li onclick="scrollToSection('portfolio')">Portafolio</li>
+                    <li onclick="scrollToSection('videos')">Videos</li>
                     <li onclick="scrollToSection('contact')">Contacto</li>
                 </ul>
-                <div class="hireMe__button pt-4">
-                    <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
-                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
-                </div>
             </div>
         </nav>
     </header>
@@ -106,15 +103,7 @@
             </div>
         </section>
     </div>
-    <!--FREE LANCER SECTION -->
-    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
-        <p class="text-sm">Tienes un proyecto en mente?</p>
-        <h1 class="text-center">Estoy disponible como freelancer</h1>
-        <div class="hireMe__button pt-4">
-            <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
-                class="cursor-pointer no-underline border-round-lg">Escríbeme</a>
-        </div>
-    </section>
+
     <!--SERVICES -->
     <div class="container">
         <section id="services" class="services min-h-full w-full pb-7">
@@ -266,6 +255,36 @@
                 </div>
             </div>
         </section>
+
+        <!-- VIDEO SECTION -->
+        <section id='videos' class="video-section mb-4 mt-4 flex justify-center items-center">
+            <div class="video-container text-center">
+                <h1 class="text-white">Edición de Videos</h1>
+                <p class="text-sm text-white">Algunos de mis trabajos recientes en edición de video:</p>
+                
+                <div class="video-cards">
+                    <div class="video-card">
+                        <video src="./assets/Mr. Irrelevant/Motivación NFL - The Old Masters.mp4" controls class="tiktok-video"></video>
+                        <h3>Video de Motivación</h3>
+                        <p>Los grandes maestros dicen que la mejor forma de aprender es fallando.</p>
+                        <a href="https://www.instagram.com/reel/DJkU6_LosYz/" target="_blank">Ver en Instagram</a>
+                    </div>
+                    <div class="video-card">
+                        <video src="./assets/Mr. Irrelevant/NFL x Attack On Titan.mp4" controls class="tiktok-video"></video>
+                        <h3>Intro NFL 2025</h3>
+                        <p>Edición con transiciones dinámicas y estilo deportivo.</p>
+                        <a href="https://www.tiktok.com/@mr_irrelevant7/video/7502536569564286213" target="_blank">Ver en Instagram</a>
+                    </div>
+                    <div class="video-card">
+                        <video src="./assets/Mr. Irrelevant/Allen - Burrow - Lamar.mp4" controls class="tiktok-video"></video>
+                        <h3>Los 3 grandes Qbs</h3>
+                        <p>Los 3 grandes QBs que se han quedado cerca de ganar un Super Bowl.</p>
+                        <a href="https://www.tiktok.com/@mr_irrelevant7/video/7488022471480773894" target="_blank">Ver en TikTok</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--FOOTER -->
         <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
             <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">

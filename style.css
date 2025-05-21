@@ -288,14 +288,99 @@ body::-webkit-scrollbar-track {
     width: 95%;
 }
 
-/* ------- FREE LANCER -------- */
-
-.freelancer {
-    height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) ,url(./assets/freelancer2.webp);
+/* ------- VIDEO SECTION -------- */
+.video-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./assets/freelancer2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 3rem 1rem;
+}
+
+.video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.video-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.tiktok-video {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 0.25rem;
+    object-fit: contain;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-container h1 {
+    font-size: 2.5rem; /* Tamaño grande (ajusta este valor) */
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.video-container p {
+    font-size: 2rem; /* Tamaño mediano (ajusta este valor) */
+    color: rgba(255, 255, 255, 0.8); /* Opcional: color ligeramente más suave */
+    max-width: 600px; /* Opcional: limita el ancho para mejor lectura */
+    margin: 0 auto 2rem; /* Centrado con margen inferior */
+}
+
+.video-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.video-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.video-card a {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .video-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video-card {
+        min-width: 80%;
+    }
+}
+
+/* Formato de video 9:16 */
+.tiktok-video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: #000;
 }
 
 /* ------- SERVICES -------- */
