@@ -33,6 +33,7 @@
                     <li onclick="scrollToSection('about')">Sobre mí</li>
                     <li onclick="scrollToSection('services')">Servicios</li>
                     <li onclick="scrollToSection('portfolio')">Portafolio</li>
+                    <li onclick="scrollToSection('narracion')">Narraciones</li>
                     <li onclick="scrollToSection('videos')">Videos</li>
                     <li onclick="scrollToSection('contact')">Contacto</li>
                 </ul>
@@ -323,26 +324,25 @@
         <section id='narracion' class="video-section mb-4 mt-4 flex justify-center items-center">
             <div class="video-container text-center">
                 <h1 class="text-white">Narración</h1>
-                <p class="video-description text-lg md:text-xl text-white mx-auto"> Actualmente gestiono la cuenta de Instagram <a href="https://www.instagram.com/mr_irrelevant7/" target="_blank"> @Mr_Irrelevant</a> donde creo y edito contenido audiovisual sobre la NFL.
-                    He logrado alcanzar múltiples videos con más de 300K reproducciones, impulsando el crecimiento y la interacción de la comunidad.</p>
+                <p class="video-description text-lg md:text-xl text-white mx-auto"> En esta sección encontrarás mis narraciones profesionales, donde doy vida a análisis y rankings de la NFL con mi voz. Explora mis Top 5 Wide Receivers, Top 10 Quarterbacks y otros contenidos similares, elaborados con investigación, pasión por el deporte y un estilo único.</p>
                 <div class="video-cards">
                     <div class="video-card">
-                        <video src="./assets/Mr. Irrelevant/Motivación NFL - The Old Masters.mp4" controls class="tiktok-video"></video>
-                        <h3>Video de Motivación</h3>
-                        <p>Los grandes maestros dicen que la mejor forma de aprender es fallando.</p>
-                        <a href="https://www.instagram.com/reel/DJkU6_LosYz/" target="_blank">Ver en Instagram</a>
+                        <video src="./assets/Mr. Irrelevant/TOP 10 QUARTERBACKS - PARTE 1.mp4" controls class="tiktok-video"></video>
+                        <h3>TOP 10 - QB</h3>
+                        <p>Parte 1 de mi TOP 10 de Quarterbacks.</p>
+                        <a href="https://www.tiktok.com/@mr_irrelevant7/video/7514090624690179346" target="_blank">Ver en TikTok</a>
                     </div>
                     <div class="video-card">
-                        <video src="./assets/Mr. Irrelevant/NFL x Attack On Titan.mp4" controls class="tiktok-video"></video>
-                        <h3>Intro NFL 2025</h3>
-                        <p>Edición con transiciones dinámicas y estilo deportivo.</p>
-                        <a href="https://www.tiktok.com/@mr_irrelevant7/video/7502536569564286213" target="_blank">Ver en TikTok</a>
+                        <video src="./assets/Mr. Irrelevant/Top 5 WR.mp4" controls class="tiktok-video"></video>
+                        <h3>TOP 5 - WR</h3>
+                        <p>Top 5 Receptores de la NFL.</p>
+                        <a href="https://www.instagram.com/reel/DLVcTVERZU7/" target="_blank">Ver en Instagram</a>
                     </div>
                     <div class="video-card">
-                        <video src="./assets/Mr. Irrelevant/Allen - Burrow - Lamar.mp4" controls class="tiktok-video"></video>
-                        <h3>Los 3 grandes Qbs</h3>
-                        <p>Los 3 grandes QBs que se han quedado cerca de ganar un Super Bowl.</p>
-                        <a href="https://www.tiktok.com/@mr_irrelevant7/video/7488022471480773894" target="_blank">Ver en TikTok</a>
+                        <video src="./assets/Mr. Irrelevant/TOP 10 QUARTERBACKS - PARTE 2.mp4" controls class="tiktok-video"></video>
+                        <h3>TOP 5 - QB</h3>
+                        <p>Parte 2 de mi TOP 10 de Quarterbacks.</p>
+                        <a href="https://www.tiktok.com/@mr_irrelevant7/video/7514835993170660616" target="_blank">Ver en TikTok</a>
                     </div>
                 </div>
             </div>
@@ -430,6 +430,13 @@
 <script>
     const filterItems = document.querySelectorAll(".filter-item");
     const galleryItems = document.querySelectorAll(".project__card");
+
+    function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
     // Función para aplicar el filtro
     function applyFilter(filterValue) {
