@@ -393,6 +393,26 @@ body::-webkit-scrollbar-track {
     text-decoration: underline;
 }
 
+/* Aumenta el ancho máximo del párrafo */
+.video-description {
+    max-width: 800px !important; /* 150px más que antes (era 600px) */
+    padding: 0 1rem; /* Evita que toque los bordes en móviles */
+}
+
+/* Opcional: Justifica el texto para mejor distribución */
+.video-description {
+    text-align: justify;
+    text-align-last: center; /* Alinea la última línea al centro */
+    hyphens: auto; /* Divide palabras largas correctamente */
+}
+
+/* Para pantallas pequeñas (ajusta el ancho) */
+@media (max-width: 768px) {
+    .video-description {
+        max-width: 90% !important;
+    }
+}
+
 /* Responsive para móviles */
 @media (max-width: 768px) {
     .video-cards {
@@ -449,9 +469,31 @@ body::-webkit-scrollbar-track {
 /* ------- PORTFOLIO -------- */
 
 .gallery__categories ul li {
-    font-size: small;
+    font-size: 1.2rem; /* Tamaño base para móviles */
     cursor: pointer;
+    font-weight: 600; /* Opcional: negrita */
+    text-transform: uppercase; /* Opcional: si quieres mantener mayúsculas */
 }
+
+/* Versión para escritorio */
+@media (min-width: 768px) {
+    .gallery__categories ul li {
+        font-size: 1.3rem; /* Más grande en pantallas amplias */
+    }
+}
+
+.gallery__categories ul li {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y el separador */
+}
+
+.gallery__categories ul li:not(:last-child)::after {
+    content: "|";
+    margin: 0 0.75rem;
+    color: rgba(255, 73, 0, 0.5); /* Naranja semitransparente */
+    font-size: 1rem; /* Ajusta según el tamaño de tu texto */
+}
+
 .gallery__categories .filter-item.active {
     border-bottom: 1px solid var(--secondary-bg-color);
 }
@@ -506,7 +548,6 @@ body::-webkit-scrollbar-track {
     cursor: pointer;
 }
 
-
 .project__card:hover .project__info {
     top: 50%;
     left: 50%;
@@ -517,7 +558,6 @@ body::-webkit-scrollbar-track {
 .project__card:hover .overlay {
     opacity: 1;
 }
-
 
 .project__card.hide {
     display: none;
