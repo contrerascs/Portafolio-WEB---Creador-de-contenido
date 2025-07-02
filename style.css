@@ -321,7 +321,7 @@ body::-webkit-scrollbar-track {
 
 /* ------- VIDEO SECTION -------- */
 .video-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./assets/freelancer2.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
